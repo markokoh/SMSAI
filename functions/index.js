@@ -38,7 +38,7 @@ exports.getAiCompletion = functions.https.onRequest(async (req, res) => {
     body: JSON.stringify({
       model: "text-davinci-003",
       prompt: messageBody,
-      max_tokens: 70,
+      max_tokens: 140,
       temperature: 0,
     }),
   });
